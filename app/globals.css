@@ -13,4 +13,13 @@ body::before {
   background-image: radial-gradient(black 1.5px, transparent 1px);
   background-size: 150px 150px; /* adjust spacing of dots */
   opacity: 0.5; /* control how visible the dots are */
+
+}
+
+body{
+    background-color: #111827;
+    font-family: Poppins, sans-serif;
+}
+ button{
+background-color: #111827; 
 }
