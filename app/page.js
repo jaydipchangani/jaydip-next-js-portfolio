@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";import Image from "next/image";
 import Header from "./header";
+import NavBar from "./navBar";
 //use popins
 export default function Home() {
   return (
@@ -32,6 +33,7 @@ export default function Home() {
       
       </div>
     </motion.div>
+    <NavBar/>
     </div>
     </>
      
