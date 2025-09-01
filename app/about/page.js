@@ -55,7 +55,19 @@ export default function AboutPage() {
                 </div>
             </div>
 
+            <div className="flex items-center justify-center flex-col gap-5 min-h-50 py-15 ">
+                <h1 className="text-4xl">Documenting life through visuals</h1>
+                <p style={{ textAlign: "center" }}>On every journey, I carry more than just a bag - I carry a camera to document the world as I see it. 
+                    <br/>Here's a glimpse into that perspective.</p>
+                
+            </div>
 
+            <div className="bg-red-500 min-h-256 flex  justify-center ">
+            
+              <div className="bg-green-500 w-1/2">
+               
+            </div>
+            </div>
             <NavBar />
         </div>
     );
