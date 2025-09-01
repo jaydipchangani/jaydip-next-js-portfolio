@@ -15,7 +15,7 @@ export default function NavBar() {
         href="/"
         className={`px-7 py-3 rounded ${
           pathname === "/"
-            ? "bg-[#111827] text-white rounded-4xl font" 
+            ? "bg-[#111827] text-white rounded-4xl " 
             : "bg-transparent text-black "
         }`}
       >
