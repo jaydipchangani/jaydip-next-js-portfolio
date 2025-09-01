@@ -8,7 +8,8 @@ export default function NavBar() {
   const pathname = usePathname();
 
   return (
-<nav className="fixed bottom-10 left-1/2 -translate-x-1/2 w-50% flex items-center justify-between px-7 py-5 bg-gray-900/60 backdrop-blur-md text-white z-50 rounded-full shadow-lg text-sm">
+<nav className="fixed bottom-10 left-1/2 -translate-x-1/2 flex items-center justify-between px-7 py-5 bg-white/10 backdrop-blur-md text-white z-50 rounded-full shadow-lg text-sm">
+ 
   <div className="space-x-4">
     <Link
         href="/"
@@ -31,7 +32,7 @@ export default function NavBar() {
       >
         About
       </Link>
-    <a href="#theme" className="hover:text-gray-400"><button className="bg-[#111827] text-white mx-2 px-4 py-2 rounded hover:bg-blue-600 transition">
+    <a href="#theme" className="hover:text-gray-400"><button className="bg-blue-500 text-white mx-2 px-4 py-2 rounded hover:bg-blue-600 transition">
         Mode
         </button></a>
   </div>
