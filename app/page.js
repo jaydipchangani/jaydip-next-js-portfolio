@@ -10,7 +10,7 @@ export default function Home() {
       
       
       <motion.div
-      className="min-h-screen m-5 rounded-lg font-sans"
+      className="min-h-screen m-5 rounded-lg"
       animate={{
         backgroundColor: ["#ADBAE8", "#ECE1ED" ,"#e6dbdbff"],
       }}
@@ -21,10 +21,10 @@ export default function Home() {
 
 
       <div >
-<p className="text-lg leading-loose">Hi, I'm Jaydip, a design-driven</p>
+<p className="text-lg leading-loose text-light">Hi, I'm Jaydip, a design-driven</p>
       <p className=" text-7xl font-medium">full-stack </p><br/>
       <p className=" text-8xl font-normal"> developer</p>
-      <div className="text flex items-end justify-end">
+      <div className="text flex items-end justify-end text-light p-2">
 
       
       <h3 className="text-lg leading-loose">  Craft. Refine. Innovate. Solve. </h3>
