@@ -31,7 +31,7 @@ export default function NavBar() {
       >
         About
       </Link>
-    <a href="#theme" className="hover:text-gray-400"><button className="bg-blue-500 text-white mx-2 px-4 py-2 rounded hover:bg-blue-600 transition">
+    <a href="#theme" className="hover:text-gray-400"><button className="bg-[#111827] text-white mx-2 px-4 py-2 rounded hover:bg-blue-600 transition">
         Mode
         </button></a>
   </div>

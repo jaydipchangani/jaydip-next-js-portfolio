@@ -1,13 +1,24 @@
 
+import Header from "../header";
 import NavBar from "../navBar";
+import Link from "next/link";
+import "../globals.css";
+
 export default function AboutPage() {
     return (
-        <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 p-6">
-            <h1 className="text-4xl font-bold mb-4">About Us</h1>
-            <p className="text-lg text-gray-700 max-w-2xl text-center">
-                Welcome to our application! We are dedicated to providing you with the best experience possible. Our team works tirelessly to ensure that our platform is user-friendly, efficient, and reliable. Thank you for choosing us!
-            </p>
-            <NavBar/>
+        <div className="m-5 bg-[#111827] ">
+        <header className="text-white text-center flex itmes-space-around p-5 justify-between sticky">
+      <Link href="/"><h1 className="text-2xl font-bold ">Jaydip Changani</h1></Link>
+
+      <a href="https://www.linkedin.com/in/jaydip-changani">
+         <button className="bg-white text-[#111827] px-4 py-2 rounded hover:bg-blue-600 transition">
+        Let's Collaborate
+        </button>
+        </a>
+       
+            
+    </header>
+        
         </div>
     );
 }
