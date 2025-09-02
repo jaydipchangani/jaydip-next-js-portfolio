@@ -21,7 +21,7 @@ export default function Home() {
 
 
       <div >
-<p className="text-lg leading-loose text-light">Hi, I'm Jaydip, a design-driven</p>
+<p className="text-lg leading-loose text-light">Hi, I&#39;m Jaydip, a design-driven</p>
       <p className=" text-7xl font-medium">full-stack </p><br/>
       <p className=" text-8xl font-normal"> developer</p>
       <div className="text flex items-end justify-end text-light p-2">

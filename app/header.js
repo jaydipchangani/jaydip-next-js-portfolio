@@ -6,7 +6,7 @@ export default function Header() {
 
       <a href="https://www.linkedin.com/in/jaydip-changani">
          <button className="bg-[#111827] text-white px-4 py-2 rounded hover:bg-blue-600 transition">
-        Let's Collaborate
+        Let&#39;s Collaborate
         </button>
         </a>
        

@@ -13,7 +13,7 @@ export default function AboutPage() {
 
                 <a href="https://www.linkedin.com/in/jaydip-changani">
                     <button className="bg-white text-[#111827] px-4 py-2 rounded hover:bg-blue-600 transition">
-                        Let's Collaborate
+                        Let&#39;s Collaborate
                     </button>
                 </a>
             </header>
@@ -22,12 +22,12 @@ export default function AboutPage() {
                 <div className="w-1/10 h-24 ">Small Div 1</div>
                 <div className="w-1/2 ">
                     <h2 className="text-6xl py-5">Hello</h2>
-                    <p style={{ textAlign: "justify" }}>My name is Jaydip, and I love building things for the web. As a full-stack developer, I’ve worked across startups, agencies, and independent projects collaborating with forward-thinking designers, developers, and product teams to create digital experiences that are both functional and meaningful.<br /><br />
+                    <p style={{ textAlign: "justify" }}>My name is Jaydip, and I love building things for the web. As a full-stack developer, I&#39;ve worked across startups, agencies, and independent projects collaborating with forward-thinking designers, developers, and product teams to create digital experiences that are both functional and meaningful.<br /><br />
 
-                        I'm deeply curious about the intersection of emerging technologies and human-centered design. Whether it's diving into the latest AI tools, exploring tech trends, or refining scalable web architectures, I’m driven by the pursuit of innovative and future ready solutions.
+                        I&#39;m deeply curious about the intersection of emerging technologies and human-centered design. Whether it&#39;s diving into the latest AI tools, exploring tech trends, or refining scalable web architectures, I’m driven by the pursuit of innovative and future ready solutions.
                         Beyond the screen, my interests extend into the ancient and the timeless. I have a strong foundational understanding of Ayurveda, Indian mythology, and the Vedas fields that offer deep insight into the human experience and holistic living. This blend of tech and tradition inspires me to explore ideas that bridge modern systems with ancient wisdom.
                         <br /><br />
-                        Right now, I’m in an exciting phase of exploration experimenting with new tools, concepts, and cross-disciplinary ideas that challenge conventional thinking and open up new ways of creating value through technology.</p>
+                        Right now, I&#39;m in an exciting phase of exploration experimenting with new tools, concepts, and cross-disciplinary ideas that challenge conventional thinking and open up new ways of creating value through technology.</p>
 
                 </div>
                 <div className="w-1/2  flex flex-col align-center justify-center px-10   ">
@@ -50,7 +50,7 @@ export default function AboutPage() {
                         />
                     </div>
                     <p className="text-sm text-white mt-4 text-start">
-                        *That's me playing badminton in Ahmedabad, India.
+                        *That&#39;s me playing badminton in Ahmedabad, India.
                     </p>
                 </div>
             </div>
@@ -58,7 +58,7 @@ export default function AboutPage() {
             <div className="flex items-center justify-center flex-col gap-5 min-h-50 py-15 ">
                 <h1 className="text-4xl">Documenting life through visuals</h1>
                 <p style={{ textAlign: "center" }}>On every journey, I carry more than just a bag - I carry a camera to document the world as I see it. 
-                    <br/>Here's a glimpse into that perspective.</p>
+                    <br/>Here&#39;s a glimpse into that perspective.</p>
                 
             </div>
 
