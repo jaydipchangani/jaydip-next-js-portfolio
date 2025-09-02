@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";import Image from "next/image";
-import Header from "./header";
-import NavBar from "./navBar";
+import Header from "./_components/header";
+import NavBar from "./_components/navBar";
 //use popins
 export default function Home() {
   return (
@@ -14,7 +14,7 @@ export default function Home() {
       animate={{
         backgroundColor: ["#ADBAE8", "#ECE1ED" ,"#e6dbdbff"],
       }}
-      transition={{ duration: 10, repeat: Infinity, repeatType: "reverse" }}
+      transition={{ duration: 5, repeat: Infinity, repeatType: "reverse" }}
     >
       <Header />
       <div className="flex items-center justify-center p-60"> 

@@ -1,6 +1,6 @@
 
-import Header from "../header";
-import NavBar from "../navBar";
+import Header from "../_components/header";
+import NavBar from "../_components/navBar";
 import Link from "next/link";
 import Image from "next/image";
 import "../globals.css";
@@ -12,14 +12,14 @@ export default function AboutPage() {
                 <Link href="/"><h1 className="text-2xl font-bold ">Jaydip Changani</h1></Link>
 
                 <a href="https://www.linkedin.com/in/jaydip-changani">
-                    <button className="bg-white text-[#111827] px-4 py-2 rounded hover:bg-blue-600 transition">
+                    <button className="bg-white text-[#111827] px-4 py-2 rounded hover:scale-95 transition">
                         Let&#39;s Collaborate
                     </button>
                 </a>
             </header>
             <div className="h-30 "></div>
             <div className=" flex gap-4">
-                <div className="w-1/10 h-24 ">Small Div 1</div>
+                <div className="w-1/10 h-24 "></div>
                 <div className="w-1/2 ">
                     <h2 className="text-6xl py-5">Hello</h2>
                     <p style={{ textAlign: "justify" }}>My name is Jaydip, and I love building things for the web. As a full-stack developer, I&#39;ve worked across startups, agencies, and independent projects collaborating with forward-thinking designers, developers, and product teams to create digital experiences that are both functional and meaningful.<br /><br />
@@ -35,7 +35,7 @@ export default function AboutPage() {
                 </div>
 
 
-                <div className="w-1/10 h-24">Small Div 2</div>
+                <div className="w-1/10 h-24"></div>
             </div>
 
             <div className="flex items-center justify-center min-h-150 ">
