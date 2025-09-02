@@ -5,8 +5,8 @@ export default function Info() {
         <div className="text-white flex flex-col items-center justify-center my-15  ">
             <h1 className="text-[3rem]">What I can do for you !!</h1>
             <div className=" w-1/3 mt-5 text-[#6B7280] text-center">
-                <p>Over the years, I've worked and dabbled with various technologies and design principles.
-                    Thanks to my experience as both a designer and developer, I've gained a solid understanding of the intersection between design and code.</p>
+                <p>Over the years, I&#39;ve worked and dabbled with various technologies and design principles.
+                    Thanks to my experience as both a designer and developer, I&#39;ve gained a solid understanding of the intersection between design and code.</p>
             </div>
 
            <ScrollingText/>
