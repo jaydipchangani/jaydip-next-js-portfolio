@@ -42,7 +42,7 @@ export default function Home() {
             <div className="col-span-1"></div>
 
             {/* First Middle Column (5 rows) */}
-            <div className="col-span-3 grid grid-rows-2 gap-4 p-4 ">
+            <div className="col-span-3 grid  gap-4 p-4 ">
               
               <div className="p-4 rounded h-fit">
                 <div className="text-white h-[15rem]">

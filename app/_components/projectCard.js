@@ -21,8 +21,8 @@ export default function ProjectCard({ imgUrl, heading, subheading, link, bottomB
           className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
         />
       </div>
-      <div className={`h-50 w-full px-5 py-5 ${bottomBgColor}`}>
-        <p className="text-sm text-gray-700 mt-1">{subheading}</p>
+      <div className={`h-60 w-full px-5 ${bottomBgColor} flex flex-col justify-center items-start`}>
+        <p className="text-sm text-gray-700 mb-3">{subheading}</p>
         <h3 className="text-3xl  group-hover:underline transition duration-300">
           {heading}
         </h3>
