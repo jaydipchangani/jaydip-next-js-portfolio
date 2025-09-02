@@ -35,6 +35,35 @@ export default function Home() {
       
       </div>
     </motion.div>
+    <div className="pt-[3rem]">
+      <div className="grid grid-cols-8 min-h-screen pt-[2rem]">
+      
+      <div className="col-span-1"></div>
+
+      {/* First Middle Column (5 rows) */}
+      <div className="col-span-3 grid grid-rows-5 gap-4 p-4 ">
+        <div className="text-white">
+          <h1 className="text-[3rem]">My Work</h1>
+          <p>A selection of a few projects I personally, or together with others, have worked on.</p>
+        </div>
+        <div className="bg-blue-300 p-4 rounded">Row 2</div>
+        <div className="bg-blue-300 p-4 rounded">Row 3</div>
+        <div className="bg-blue-300 p-4 rounded">Row 4</div>
+        <div className="bg-blue-300 p-4 rounded">Row 5</div>
+      </div>
+
+      {/* Second Middle Column (4 rows) */}
+      <div className="col-span-3 grid grid-rows-4 gap-4 p-4 ">
+        <div className="bg-green-300 p-4 rounded">Row 1</div>
+        <div className="bg-green-300 p-4 rounded">Row 2</div>
+        <div className="bg-green-300 p-4 rounded">Row 3</div>
+        <div className="bg-green-300 p-4 rounded">Row 4</div>
+      </div>
+
+      {/* Right Empty Column */}
+      <div className="col-span-1"></div>
+    </div>
+    </div>
     <Info/>
     
     <NavBar/>
