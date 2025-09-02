@@ -2,6 +2,8 @@
 import { motion } from "framer-motion";import Image from "next/image";
 import Header from "./_components/header";
 import NavBar from "./_components/navBar";
+import Info from "./_components/info";
+import ScrollingText from "./_components/scrollingText";
 //use popins
 export default function Home() {
   return (
@@ -33,6 +35,8 @@ export default function Home() {
       
       </div>
     </motion.div>
+    <Info/>
+    
     <NavBar/>
     </div>
     </>
