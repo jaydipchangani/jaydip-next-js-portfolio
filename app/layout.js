@@ -1,4 +1,5 @@
 import { Poppins } from "next/font/google";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import "./globals.css";
 
 const poppins = Poppins({
@@ -11,6 +12,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={poppins.className}>
         {children}
+        <SpeedInsights />
       </body>
     </html>
   );
