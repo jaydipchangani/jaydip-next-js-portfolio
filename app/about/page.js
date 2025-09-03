@@ -4,6 +4,7 @@ import NavBar from "../_components/navBar";
 import Link from "next/link";
 import Image from "next/image";
 import "../globals.css";
+import PhotoGallery from "../_components/photoGallery";
 
 export default function AboutPage() {
     return (
@@ -40,9 +41,9 @@ export default function AboutPage() {
 
             <div className="flex items-center justify-center min-h-150 ">
                 <div className="w-200  flex flex-col items-start justify-center px-10 py-6 rounded-xl">
-                    <div className="relative w-full h-100">
+                    <div className="relative w-full h-96">
                         <Image
-                            src="https://plus.unsplash.com/premium_photo-1755813486214-f367b631b244"
+                            src="/JaydipImage.jpeg"
                             alt="Picture of the author"
                             fill
                             className="rounded-2xl object-cover"
@@ -50,23 +51,30 @@ export default function AboutPage() {
                         />
                     </div>
                     <p className="text-sm text-white mt-4 text-start">
-                        *That&#39;s me playing badminton in Ahmedabad, India.
+                        *That&#39;s me doing nothing in Gujarat, India.
                     </p>
                 </div>
             </div>
 
             <div className="flex items-center justify-center flex-col gap-5 min-h-50 py-15 ">
                 <h1 className="text-4xl">Documenting life through visuals</h1>
-                <p style={{ textAlign: "center" }}>On every journey, I carry more than just a bag - I carry a camera to document the world as I see it. 
-                    <br/>Here&#39;s a glimpse into that perspective.</p>
-                
+                <p style={{ textAlign: "center" }}>On every journey, I carry more than just a bag - I carry a camera to document the world as I see it.
+                    <br />Here&#39;s a glimpse into that perspective.</p>
+
             </div>
 
-            <div className="bg-red-500 min-h-256 flex  justify-center ">
-            
-              <div className="bg-green-500 w-1/2">
-               
-            </div>
+            <div className=" min-h-256 flex  justify-center ">
+
+                <div className="w-1/8">
+                   
+                </div>
+                <div className="w-6/8">
+                    <PhotoGallery />
+
+                </div>
+                <div className=" w-1/8">
+                  
+                </div>
             </div>
             <NavBar />
         </div>
