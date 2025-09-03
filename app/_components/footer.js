@@ -5,8 +5,8 @@ export default function Footer() {
         <footer className="bg-gray-800 text-white mx-5 rounded-2xl flex justify-center py-20">
             <div className="container flex flex-col flex-row items-start ">
                 <div className=" w-1/2 space-y-3 ">
-                    <h1 className="text-3xl">Let's build something together.</h1>
-                    <p className="text-sm">Feel free to reach out if you've a question, or just want to connect.</p>
+                    <h1 className="text-3xl">Let&#39;s build something together.</h1>
+                    <p className="text-sm">Feel free to reach out if you&#39;ve a question, or just want to connect.</p>
                     <h2 className="text-xl py-15">jaydipchangani2@gmail.com</h2>
                     <p className="text-sm">©2025 Jaydip Changani - Built with Next.js and TailwindCSS</p>
                 </div>
