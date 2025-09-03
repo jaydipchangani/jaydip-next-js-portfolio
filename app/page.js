@@ -5,6 +5,8 @@ import NavBar from "./_components/navBar";
 import Info from "./_components/info";
 import ProjectCard from "./_components/projectCard";
 import Head from "next/head";
+import { DefaultSeo,NextSeo,ArticleJsonLd} from "next-seo";
+import SEO from "./next-seo.config";
 
 const fadeUp = {
   initial: { opacity: 0, y: 20 },
@@ -15,6 +17,39 @@ const fadeUp = {
 export default function Home() {
   return (
     <>
+    <DefaultSeo {...SEO} />
+<ArticleJsonLd
+  type="Person"
+  name="Jaydip Changani"
+  url="https://jaydip-next-js-portfolio.vercel.app/"
+  sameAs={[
+    "https://www.linkedin.com/in/jaydip-changani",
+    "https://github.com/jaydipchangani",
+  ]}
+  jobTitle="Full Stack Developer"
+  worksFor={{
+    name: "Freelance / Open Source",
+  }}
+/>
+    <NextSeo
+        title="About Jaydip Changani | Developer & Storyteller"
+        description="Discover more about Jaydip — a full-stack developer with a passion for ancient wisdom and modern tech."
+        canonical="https://jaydip-next-js-portfolio.vercel.app/"
+        openGraph={{
+          url: "https://jaydip-next-js-portfolio.vercel.app/",
+          title: "About Jaydip Changani | Developer & Storyteller",
+          description:
+            "Get to know Jaydip — full-stack developer, visual storyteller, and tech explorer blending old and new.",
+          images: [
+            {
+              url: "https://jaydip-next-js-portfolio.vercel.app/_next/image?url=%2FJaydipImage.jpeg&w=1920&q=75",
+              width: 1200,
+              height: 630,
+              alt: "Jaydip Changani",
+            },
+          ],
+        }}
+      />
     <Head>
         <title>Jaydip Changani - Full-stack Developer Portfolio</title>
         <meta
