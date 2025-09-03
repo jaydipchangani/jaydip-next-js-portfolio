@@ -5,7 +5,7 @@ import NavBar from "./_components/navBar";
 import Info from "./_components/info";
 import ProjectCard from "./_components/projectCard";
 import Head from "next/head";
-import { DefaultSeo,NextSeo,ArticleJsonLd} from "next-seo";
+import { DefaultSeo, NextSeo, ArticleJsonLd } from "next-seo";
 import SEO from "./next-seo.config";
 
 const fadeUp = {
@@ -17,21 +17,21 @@ const fadeUp = {
 export default function Home() {
   return (
     <>
-    <DefaultSeo {...SEO} />
-<ArticleJsonLd
-  type="Person"
-  name="Jaydip Changani"
-  url="https://jaydip-next-js-portfolio.vercel.app/"
-  sameAs={[
-    "https://www.linkedin.com/in/jaydip-changani",
-    "https://github.com/jaydipchangani",
-  ]}
-  jobTitle="Full Stack Developer"
-  worksFor={{
-    name: "Freelance / Open Source",
-  }}
-/>
-    <NextSeo
+      <DefaultSeo {...SEO} />
+      <ArticleJsonLd
+        type="Person"
+        name="Jaydip Changani"
+        url="https://jaydip-next-js-portfolio.vercel.app/"
+        sameAs={[
+          "https://www.linkedin.com/in/jaydip-changani",
+          "https://github.com/jaydipchangani",
+        ]}
+        jobTitle="Full Stack Developer"
+        worksFor={{
+          name: "Freelance / Open Source",
+        }}
+      />
+      <NextSeo
         title="About Jaydip Changani | Developer & Storyteller"
         description="Discover more about Jaydip — a full-stack developer with a passion for ancient wisdom and modern tech."
         canonical="https://jaydip-next-js-portfolio.vercel.app/"
@@ -50,7 +50,7 @@ export default function Home() {
           ],
         }}
       />
-    <Head>
+      <Head>
         <title>Jaydip Changani - Full-stack Developer Portfolio</title>
         <meta
           name="description"
@@ -86,7 +86,7 @@ export default function Home() {
           }}
           transition={{ duration: 5, repeat: Infinity, repeatType: "reverse" }}
         >
-          
+
           <motion.div {...fadeUp}>
             <Header />
           </motion.div>
