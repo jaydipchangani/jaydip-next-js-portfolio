@@ -5,6 +5,7 @@ import Image from "next/image";
 import "../globals.css";
 import PhotoGallery from "../_components/photoGallery";
 import TypingHello from "../_components/TypingHello";
+import Head from "next/head";
 
 export default function AboutPage() {
     return (
