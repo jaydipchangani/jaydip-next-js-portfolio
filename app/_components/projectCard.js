@@ -10,20 +10,20 @@ export default function ProjectCard({ imgUrl, heading, subheading, link, bottomB
       href={link}
       target="_blank"
       rel="noopener noreferrer"
-      className="block w-full max-w-xl rounded-3xl overflow-hidden shadow-lg group transition-all duration-300"
+      className="block w-full max-w-4xl rounded-3xl overflow-hidden shadow-lg group transition-all duration-300"
     >
-      <div className="h-100 bg-white relative overflow-hidden">
+      <div className="relative w-full h-48 sm:h-60 md:h-72 lg:h-[20rem] bg-white overflow-hidden">
         <Image
           src={imgUrl}
           alt={heading}
-          width={800} // adjust as needed
-          height={500} // adjust as needed
-          className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+          fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 800px"
+          className="object-cover transition-transform duration-300 group-hover:scale-105"
         />
       </div>
-      <div className={`h-60 w-full px-5 ${bottomBgColor} flex flex-col justify-center items-start`}>
-        <p className="text-sm text-gray-700 mb-3">{subheading}</p>
-        <h3 className="text-3xl  group-hover:underline transition duration-300">
+      <div className={`w-full px-4 py-6 sm:px-6 md:px-8 ${bottomBgColor} flex flex-col justify-center items-start`}>
+        <p className="text-xs sm:text-sm text-gray-700 mb-2 sm:mb-3">{subheading}</p>
+        <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold group-hover:underline transition duration-300">
           {heading}
         </h3>
       </div>

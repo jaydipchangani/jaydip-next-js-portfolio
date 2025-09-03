@@ -7,7 +7,7 @@ export default function Header() {
       {/* Logo: JD on mobile, full name on md+ */}
       <Link href="/">
         <h1 className="text-2xl font-bold">
-          <span className="block md:hidden">JD</span>
+          <span className="block md:hidden">jd</span>
           <span className="hidden md:block">Jaydip Changani</span>
         </h1>
       </Link>
