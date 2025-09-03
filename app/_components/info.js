@@ -1,8 +1,9 @@
+import Link from "next/link";
 import ScrollingText from "./scrollingText";
 
 export default function Info() {
   return (
-    <div className="text-white flex flex-col items-center justify-center my-15 px-5">
+    <div className="text-white flex flex-col items-center justify-center my-15">
       <h1 className="text-[2rem] sm:text-[2.5rem] md:text-[3rem] text-center">
         What I can do for you !!
       </h1>
@@ -18,9 +19,12 @@ export default function Info() {
 
       <ScrollingText />
 
-      <button className="bg-white text-[#111827] py-5 px-8 sm:px-10 text-[1rem] sm:text-[1.1rem] rounded-full hover:scale-95 transition mt-6">
+<Link href="/about" >
+<button className="bg-white text-[#111827] py-5 px-8 sm:px-10 text-[1rem] sm:text-[1.1rem] rounded-full hover:scale-95 transition mt-6">
         Read More About Me
       </button>
+</Link>
+      
     </div>
   );
 }
