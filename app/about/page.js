@@ -5,9 +5,39 @@ import Image from "next/image";
 import "../globals.css";
 import PhotoGallery from "../_components/photoGallery";
 import TypingHello from "../_components/TypingHello";
+import Head from "next/head";
 
 export default function AboutPage() {
     return (
+        <>
+        <Head>
+                <title>About Jaydip Changani | Full-Stack Developer & Visual Storyteller</title>
+                <meta
+                    name="description"
+                    content="Learn more about Jaydip Changani - a full-stack developer blending modern tech with ancient wisdom. Passionate about web, design, and visual storytelling."
+                />
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <link rel="canonical" href="https://jaydip-next-js-portfolio.vercel.app/" />
+
+                <meta property="og:title" content="About Jaydip Changani | Full-Stack Developer & Visual Storyteller" />
+                <meta
+                    property="og:description"
+                    content="Blending technology with human-centered design, Ayurveda, and storytelling. Discover more about Jaydip Changani."
+                />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://jaydip-next-js-portfolio.vercel.app/" />
+                <meta property="og:image" content="https://jaydip-next-js-portfolio.vercel.app/_next/image?url=%2FJaydipImage.jpeg&w=1920&q=75" />
+
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="About Jaydip Changani | Full-Stack Developer" />
+                <meta
+                    name="twitter:description"
+                    content="Get to know Jaydip - full-stack developer, creative technologist, and curious mind bridging modern and ancient systems."
+                />
+                <meta name="twitter:image" content="https://jaydip-next-js-portfolio.vercel.app/_next/image?url=%2FJaydipImage.jpeg&w=1920&q=75" />
+            </Head>
+
+       
         <div className="m-5 bg-[#111827] text-white p-5">
 
             <header className="text-white flex flex-wrap justify-between items-center fixed top-0 left-0 right-0 bg-[#111827] px-5 md:px-10 pt-5 md:pt-10 z-50">
@@ -95,5 +125,7 @@ export default function AboutPage() {
 
             <NavBar />
         </div>
+
+         </>
     );
 }

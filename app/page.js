@@ -4,6 +4,9 @@ import Header from "./_components/header";
 import NavBar from "./_components/navBar";
 import Info from "./_components/info";
 import ProjectCard from "./_components/projectCard";
+import Head from "next/head";
+import { DefaultSeo, NextSeo, ArticleJsonLd } from "next-seo";
+import SEO from "./next-seo.config";
 
 const fadeUp = {
   initial: { opacity: 0, y: 20 },
@@ -14,6 +17,67 @@ const fadeUp = {
 export default function Home() {
   return (
     <>
+      <DefaultSeo {...SEO} />
+      <ArticleJsonLd
+        type="Person"
+        name="Jaydip Changani"
+        url="https://jaydip-next-js-portfolio.vercel.app/"
+        sameAs={[
+          "https://www.linkedin.com/in/jaydip-changani",
+          "https://github.com/jaydipchangani",
+        ]}
+        jobTitle="Full Stack Developer"
+        worksFor={{
+          name: "Freelance / Open Source",
+        }}
+      />
+      <NextSeo
+        title="About Jaydip Changani | Developer & Storyteller"
+        description="Discover more about Jaydip — a full-stack developer with a passion for ancient wisdom and modern tech."
+        canonical="https://jaydip-next-js-portfolio.vercel.app/"
+        openGraph={{
+          url: "https://jaydip-next-js-portfolio.vercel.app/",
+          title: "About Jaydip Changani | Developer & Storyteller",
+          description:
+            "Get to know Jaydip — full-stack developer, visual storyteller, and tech explorer blending old and new.",
+          images: [
+            {
+              url: "https://jaydip-next-js-portfolio.vercel.app/_next/image?url=%2FJaydipImage.jpeg&w=1920&q=75",
+              width: 1200,
+              height: 630,
+              alt: "Jaydip Changani",
+            },
+          ],
+        }}
+      />
+      <Head>
+        <title>Jaydip Changani - Full-stack Developer Portfolio</title>
+        <meta
+          name="description"
+          content="Hi, I'm Jaydip, a design-driven full-stack developer. Explore my portfolio showcasing projects, skills, and innovative solutions."
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <meta property="og:title" content="Jaydip Changani - Full-stack Developer Portfolio" />
+        <meta
+          property="og:description"
+          content="Explore the portfolio of Jaydip, a full-stack developer focused on crafting, refining, and innovating solutions."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://jaydip-next-js-portfolio.vercel.app/" />
+        <meta property="og:image" content="https://jaydip-next-js-portfolio.vercel.app/_next/image?url=%2FJaydipImage.jpeg&w=1920&q=75" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Jaydip Changani - Full-stack Developer Portfolio" />
+        <meta
+          name="twitter:description"
+          content="Hi, I'm Jaydip, a full-stack developer. Check out my projects and skills portfolio."
+        />
+        <meta name="twitter:image" content="https://jaydip-next-js-portfolio.vercel.app/" />
+
+        <link rel="canonical" href="https://jaydip-next-js-portfolio.vercel.app/" />
+      </Head>
+
       <div>
         <motion.div
           className="min-h-screen m-5 rounded-4xl"
@@ -22,7 +86,7 @@ export default function Home() {
           }}
           transition={{ duration: 5, repeat: Infinity, repeatType: "reverse" }}
         >
-          
+
           <motion.div {...fadeUp}>
             <Header />
           </motion.div>
