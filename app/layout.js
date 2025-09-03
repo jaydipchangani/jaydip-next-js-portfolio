@@ -3,6 +3,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Analytics } from '@vercel/analytics/next';
 
 import "./globals.css";
+import Footer from "./_components/footer";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -16,6 +17,7 @@ export default function RootLayout({ children }) {
         {children}
         <SpeedInsights />
         <Analytics />
+        <Footer />
       </body>
     </html>
   );
