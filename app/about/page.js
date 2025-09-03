@@ -9,27 +9,39 @@ import TypingHello from "../_components/TypingHello";
 export default function AboutPage() {
     return (
         <div className="m-5 bg-[#111827] text-white p-5">
-            {/* Responsive Fixed Header */}
+
             <header className="text-white flex flex-wrap justify-between items-center fixed top-0 left-0 right-0 bg-[#111827] px-5 md:px-10 pt-5 md:pt-10 z-50">
                 <Link href="/">
                     <h1 className="text-2xl font-bold">
-          <span className="block md:hidden">jd</span>
-          <span className="hidden md:block">Jaydip Changani</span>
-        </h1>
+                        <span className="block md:hidden">jd</span>
+                        <span className="hidden md:block">Jaydip Changani</span>
+                    </h1>
                 </Link>
-                <a href="https://www.linkedin.com/in/jaydip-changani" className="mt-2 md:mt-0">
-                    <button className="bg-white text-[#111827] px-4 py-2 rounded hover:scale-95 transition">
-                        Let&#39;s Collaborate
-                    </button>
-                </a>
-            </header>
+                <a
+  href="https://www.linkedin.com/in/jaydip-changani"
+  className="mt-2 md:mt-0 mb-4 md:mb-0"  
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <button
+    className="
+      bg-white text-[#111827]
+      text-sm md:text-base
+      px-4 py-2 md:px-6 md:py-2.5
+      rounded hover:scale-95 transition
+    "
+  >
+    <span className="block md:hidden">Collaborate</span>
+    <span className="hidden md:block">Let&apos;s Collaborate</span>
+  </button>
+</a>
 
-            {/* Spacer for Fixed Header */}
+
+            </header>
             <div className="h-28 md:h-32"></div>
 
-            {/* Main Bio Section */}
             <div className="flex flex-col md:flex-row gap-6 max-w-screen-xl mx-auto animate-fade-in">
-                {/* Left spacing not needed for small devices */}
+
                 <div className="w-full md:w-1/2 px-4">
                     <TypingHello />
                     <p className="text-justify mt-4">
@@ -43,13 +55,11 @@ export default function AboutPage() {
                     </p>
                 </div>
 
-                {/* Right spacing for image or placeholder */}
                 <div className="w-full md:w-1/2 flex justify-center items-center px-4">
-                    {/* Optional: Add something later here */}
+
                 </div>
             </div>
 
-            {/* Profile Image Section */}
             <div className="flex items-center justify-center mt-10 ">
                 <div className="w-full max-w-2xl px-4 py-6 rounded-xl ">
                     <div className="relative w-full h-96">
@@ -59,7 +69,7 @@ export default function AboutPage() {
                             fill
                             className="rounded-2xl object-cover animate-fade-in "
                             priority
-                            
+
                         />
                     </div>
                     <p className="text-sm text-white mt-4 text-start">
@@ -68,7 +78,6 @@ export default function AboutPage() {
                 </div>
             </div>
 
-            {/* Photography Section */}
             <div className="flex flex-col items-center justify-center text-center gap-5 py-16 px-4">
                 <h1 className="text-3xl md:text-4xl font-semibold">Documenting life through visuals</h1>
                 <p>
@@ -78,14 +87,12 @@ export default function AboutPage() {
                 </p>
             </div>
 
-            {/* Photo Gallery Section */}
             <div className="flex justify-center px-4">
                 <div className="w-full max-w-screen-xl">
                     <PhotoGallery />
                 </div>
             </div>
 
-            {/* Footer Navigation */}
             <NavBar />
         </div>
     );
