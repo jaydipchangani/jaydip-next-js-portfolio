@@ -12,7 +12,10 @@ export default function AboutPage() {
             {/* Responsive Fixed Header */}
             <header className="text-white flex flex-wrap justify-between items-center fixed top-0 left-0 right-0 bg-[#111827] px-5 md:px-10 pt-5 md:pt-10 z-50">
                 <Link href="/">
-                    <h1 className="text-2xl font-bold">Jaydip Changani</h1>
+                    <h1 className="text-2xl font-bold">
+          <span className="block md:hidden">jd</span>
+          <span className="hidden md:block">Jaydip Changani</span>
+        </h1>
                 </Link>
                 <a href="https://www.linkedin.com/in/jaydip-changani" className="mt-2 md:mt-0">
                     <button className="bg-white text-[#111827] px-4 py-2 rounded hover:scale-95 transition">
