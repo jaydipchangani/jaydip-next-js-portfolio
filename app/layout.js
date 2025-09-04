@@ -13,6 +13,9 @@ const poppins = Poppins({
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.webp" type="image/webp" />
+      </head>
       <body className={poppins.className}>
         {children}
         <SpeedInsights />
